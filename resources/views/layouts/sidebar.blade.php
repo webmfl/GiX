@@ -38,6 +38,21 @@
                 </ul>
             </div>
         </li>
+        <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed text-white w-100 text-start"
+                data-bs-toggle="collapse" data-bs-target="#admin-collapse" aria-expanded="false">
+                <i class="bi bi-building me-2"></i> Administración
+            </button>
+            <div class="collapse" id="admin-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ms-4">
+                    <li><a href="#" class="link-light rounded text-decoration-none">Cuotas</a></li>
+                    <li><a href="{{ route('alumnos.index') }}"
+                            class="link-light rounded text-decoration-none">Alumnos</a></li>
+                    <li><a href="{{ route('secciones.index') }}"
+                            class="link-light rounded text-decoration-none">Secciones</a></li>
+                </ul>
+            </div>
+        </li>
     </ul>
     <hr>
     <div class="dropdown">

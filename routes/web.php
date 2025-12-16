@@ -25,4 +25,6 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('users', App\Http\Controllers\UserController::class);
     Route::resource('puestos', App\Http\Controllers\PuestoController::class);
     Route::resource('personal', App\Http\Controllers\PersonalController::class);
+    Route::resource('alumnos', App\Http\Controllers\AlumnoController::class);
+    Route::resource('secciones', App\Http\Controllers\SeccionController::class);
 });
